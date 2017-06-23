@@ -1,5 +1,5 @@
 package battleship.model;
 
-public class Ship {
+public class Cell {
 
 }

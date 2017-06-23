@@ -1,12 +1,14 @@
 package battleship.core.statepattern;
 
+import battleship.enums.StateType;
+
 public interface IState {
 	
 	public void load();
 	
 	public void unload();
 	
-	public void init();
+	public void init(IApplicationContext applicationContext);
 	
 	public void update();
 	
@@ -15,4 +17,6 @@ public interface IState {
 	public void paused();
 	
 	public void unpaused();
+	
+	public StateType getState();
 }
